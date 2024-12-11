@@ -1,0 +1,41 @@
+
+.menu {
+  position: relative;
+}
+.menu-hamburguesa {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.menu-hamburguesa .line {
+  background-color: black;
+  height: 4px;
+  width: 100%;
+  margin: 4px 0;
+  transition: all 0.2s ease;
+}
+
+.menu-palanca:checked + .menu-hamburguesa .line-1 {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+}
+
+.menu-palanca:checked + .menu-hamburguesa .line-2 {
+  opacity: 0;
+}
+
+.menu-palanca:checked + .menu-hamburguesa .line-3 {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+}
+
+  
+
+  
+
